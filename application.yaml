@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    chart: orc8r
+    path: charts
     repoURL: https://github.com/nitinrajput1997/magma-charts-2-3-2022-v2
-    targetRevision: 1.5.26
+    targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc
     namespace: orc8r
