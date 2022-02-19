@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: magma
+  namespace: argocd
+spec:
+  project: default
+  source:
+    chart: orc8r
+    repoURL: https://github.com/nitinrajput1997/magma-charts-2-3-2022-v2
+    targetRevision: 1.5.26
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: orc8r
